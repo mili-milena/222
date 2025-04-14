@@ -23,22 +23,26 @@ header span {
 }
 
 /* MAIN SECTION */
-.main-section {
+.main-section,
+[data-cy="hw-4-section-main-pre"] {
     background-color: #f5f5f5;
-    padding: 60px 0 100px;
+    padding: 100px 0;
+    min-height: 100vh;
 }
 
 @media screen and (max-width: 768px) {
+    .main-section,
     [data-cy="hw-4-section-main-pre"] {
-        padding: 30px 0px 60px;
+        padding: 30px 0 60px;
     }
 }
 
-.wrapper {
+.wrapper,
+[data-cy="hw-4-section-main-wrapper-pre"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 60px;
     flex-wrap: wrap;
 }
 
@@ -57,8 +61,10 @@ header span {
     line-height: 1.6;
 }
 
-.main-image {
-    max-width: 100%;
+.main-image,
+[data-cy="hw-4-main-image"] {
+    max-width: 460px;
+    width: 100%;
     height: auto;
 }
 
@@ -73,10 +79,14 @@ header span {
     gap: 60px;
 }
 
-/* Убираем уменьшение gap в медиа-запросе */
 @media screen and (max-width: 768px) {
     [data-cy="hw-4-info-wrapper-pre"] {
         gap: 60px;
+    }
+
+    [data-cy="hw-4-section-main-wrapper-pre"] {
+        flex-direction: column;
+        gap: 40px;
     }
 }
 
