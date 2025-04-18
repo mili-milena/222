@@ -170,24 +170,22 @@ footer {
 @media screen and (max-width: 768px) {
     .main-section,
     [data-cy="hw-4-section-main-pre"] {
-        padding: 30px 0 100px;
+        padding: 30px 0 60px;
     }
 
     .wrapper,
     [data-cy="hw-4-section-main-wrapper-pre"] {
         flex-direction: column;
-        gap: 60px;
+        gap: 40px;
     }
 
     .about-section .wrapper,
     [data-cy="hw-4-section-about-wrapper-pre"] {
-      gap: 50px;
+        gap: 50px;
     }
 
     .info-wrapper,
     [data-cy="hw-4-info-wrapper-pre"] {
-        gap: 60px;
+        gap: 50px;
     }
-
-
 }
