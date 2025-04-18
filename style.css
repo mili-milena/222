@@ -168,15 +168,16 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
+    /* Сохраняем правильные значения padding и gap для мобильных устройств */
     .main-section,
     [data-cy="hw-4-section-main-pre"] {
-        padding: 30px 0 60px;
+        padding: 30px 0 60px; /* Оставляем это значение, чтобы не вызывать ошибку на мобильных устройствах */
     }
 
     .wrapper,
     [data-cy="hw-4-section-main-wrapper-pre"] {
         flex-direction: column;
-        gap: 40px;
+        gap: 40px; /* Сохраняем 40px для gap, как в тестах для мобильных устройств */
     }
 
     .about-section .wrapper,
@@ -186,6 +187,24 @@ footer {
 
     .info-wrapper,
     [data-cy="hw-4-info-wrapper-pre"] {
-        gap: 50px;
+        gap: 50px; /* Оставляем 50px для gap */
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /* Для больших экранов можно применять другие значения, если необходимо */
+    .main-section,
+    [data-cy="hw-4-section-main-pre"] {
+        padding: 100px 0;
+    }
+
+    .wrapper,
+    [data-cy="hw-4-section-main-wrapper-pre"] {
+        gap: 60px;
+    }
+
+    .info-wrapper,
+    [data-cy="hw-4-info-wrapper-pre"] {
+        gap: 60px;
     }
 }
