@@ -34,7 +34,7 @@ header span {
 @media screen and (max-width: 768px) {
     .main-section,
     [data-cy="hw-4-section-main-pre"] {
-        padding: 30px 0 100px;
+        padding: 30px 0 60px;
     }
 }
 
@@ -43,14 +43,14 @@ header span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
     [data-cy="hw-4-section-main-wrapper-pre"] {
         flex-direction: column;
-        gap: 60px;
+        gap: 40px;
     }
 }
 
@@ -90,12 +90,12 @@ header span {
 [data-cy="hw-4-info-wrapper-pre"] {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 60px;
 }
 
 @media screen and (max-width: 768px) {
     [data-cy="hw-4-info-wrapper-pre"] {
-        gap: 50px;
+        gap: 60px;
     }
 }
 
