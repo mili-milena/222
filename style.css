@@ -3,12 +3,13 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
+    min-width: 375px;
 }
 
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 header {
@@ -33,7 +34,7 @@ header span {
 @media screen and (max-width: 768px) {
     .main-section,
     [data-cy="hw-4-section-main-pre"] {
-        padding: 30px 0 60px;
+        padding: 30px 0 100px;
     }
 }
 
@@ -44,6 +45,13 @@ header span {
     justify-content: space-between;
     gap: 60px;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    [data-cy="hw-4-section-main-wrapper-pre"] {
+        flex-direction: column;
+        gap: 60px;
+    }
 }
 
 [data-cy="hw-4-text-wrapper-pre"] {
@@ -63,7 +71,7 @@ header span {
 
 .main-image,
 [data-cy="hw-4-main-image"] {
-    max-width: 460px;
+    max-width: 100%;
     width: 100%;
     height: auto;
 }
@@ -73,20 +81,21 @@ header span {
     padding: 60px 0;
 }
 
+[data-cy="hw-4-section-about-wrapper-pre"] {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 [data-cy="hw-4-info-wrapper-pre"] {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
 }
 
 @media screen and (max-width: 768px) {
     [data-cy="hw-4-info-wrapper-pre"] {
-        gap: 60px;
-    }
-
-    [data-cy="hw-4-section-main-wrapper-pre"] {
-        flex-direction: column;
-        gap: 40px;
+        gap: 50px;
     }
 }
 
@@ -155,6 +164,12 @@ table th,
 table td {
     padding: 10px;
     text-align: left;
+}
+
+/* FORM — правка для gap */
+form {
+    display: flex;
+    gap: 10px;
 }
 
 /* FOOTER */
