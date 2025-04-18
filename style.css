@@ -31,27 +31,13 @@ header span {
     min-height: 100vh;
 }
 
-@media screen and (max-width: 768px) {
-    .main-section,
-    [data-cy="hw-4-section-main-pre"] {
-        padding: 30px 0 100px; /* исправлено: bottom = 100px */
-    }
-}
-
 .wrapper,
 [data-cy="hw-4-section-main-wrapper-pre"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px; /* исправлено с 40px на 60px */
+    gap: 60px;
     flex-wrap: wrap;
-}
-
-@media screen and (max-width: 768px) {
-    [data-cy="hw-4-section-main-wrapper-pre"] {
-        flex-direction: column;
-        gap: 60px;
-    }
 }
 
 [data-cy="hw-4-text-wrapper-pre"] {
@@ -81,22 +67,17 @@ header span {
     padding: 60px 0;
 }
 
-[data-cy="hw-4-section-about-wrapper-pre"] {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
+.info-wrapper,
 [data-cy="hw-4-info-wrapper-pre"] {
     display: flex;
     flex-direction: column;
     gap: 60px;
 }
 
-@media screen and (max-width: 768px) {
-    [data-cy="hw-4-info-wrapper-pre"] {
-        gap: 50px; /* исправлено с 60px на 50px */
-    }
+[data-cy="hw-4-section-about-wrapper-pre"] {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .section-title {
@@ -183,4 +164,23 @@ footer {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    .main-section,
+    [data-cy="hw-4-section-main-pre"] {
+        padding: 30px 0 60px;
+    }
+
+    .wrapper,
+    [data-cy="hw-4-section-main-wrapper-pre"] {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .info-wrapper,
+    [data-cy="hw-4-info-wrapper-pre"] {
+        gap: 50px;
+    }
 }
